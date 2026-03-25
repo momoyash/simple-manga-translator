@@ -25,7 +25,7 @@ Supports DeepL, GPT-4o, Gemini, DeepSeek, Groq, and several offline models out o
 ### Folder structure
 
 ```
-D:/
+parent-folder/
 ├── simple-manga-translator/   ← this repo
 └── manga-image-translator/    ← engine (install separately)
 ```
@@ -36,7 +36,7 @@ D:/
 
 **1. Clone this repo**
 ```bash
-git clone https://github.com/YOUR_USERNAME/simple-manga-translator
+git clone https://github.com/momoyash/simple-manga-translator
 cd simple-manga-translator
 ```
 
@@ -89,14 +89,23 @@ python run.py -i page.png -o output/
 
 **Switch translator:**
 ```bash
-python run.py -i manga/ -o out/ -t deepl
-python run.py -i manga/ -o out/ -t chatgpt
-python run.py -i manga/ -o out/ -t gemini
+python run.py -i manga/ -o out/ -t deepl       # DeepL (recommended)
+python run.py -i manga/ -o out/ -t chatgpt     # GPT-4o
+python run.py -i manga/ -o out/ -t gemini      # Gemini
+python run.py -i manga/ -o out/ -t sugoi       # offline, no API needed
 ```
 
-**Change target language:**
+**Change target language** (default is English):
 ```bash
-python run.py -i manga/ -o out/ --lang DEU
+python run.py -i manga/ -o out/ --lang DEU     # German
+python run.py -i manga/ -o out/ --lang FRA     # French
+python run.py -i manga/ -o out/ --lang ENG     # English
+```
+
+**Change output format:**
+```bash
+python run.py -i manga/ -o out/ -f jpg
+python run.py -i manga/ -o out/ -f webp
 ```
 
 **List all available translators:**
