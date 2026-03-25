@@ -62,11 +62,15 @@ Download `detector.onnx` from [ogkalu/comic-text-and-bubble-detector](https://hu
 simple-manga-translator/models/detector.onnx
 ```
 
-**5. Set up your API key (if using DeepL or other APIs)**
+**5. Set up API keys (if using DeepL, GPT-4o, or other APIs)**
 
-Create a `.env` file in the project root:
+Create a `.env` file in the project root and add whichever keys you need:
 ```
-DEEPL_AUTH_KEY=your-key-here
+DEEPL_AUTH_KEY=
+OPENAI_API_KEY=
+GEMINI_API_KEY=
+DEEPSEEK_API_KEY=
+GROQ_API_KEY=
 ```
 
 ---
@@ -121,15 +125,6 @@ python run.py -i manga/ -o out/ --no-gpu
 | `m2m100_big` | Offline | Multilingual, higher quality |
 | `nllb` | Offline | Meta, multilingual |
 | `nllb_big` | Offline | Meta, multilingual large |
-
-API keys go in `.env`:
-```
-DEEPL_AUTH_KEY=
-OPENAI_API_KEY=
-GEMINI_API_KEY=
-DEEPSEEK_API_KEY=
-GROQ_API_KEY=
-```
 
 ---
 
