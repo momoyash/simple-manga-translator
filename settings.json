@@ -1,0 +1,18 @@
+{
+  "translator": {
+    "translator": "deepl",
+    "target_lang": "ENG"
+  },
+  "detector": {
+    "detector": "ensemble",
+    "detection_size": 2048
+  },
+  "render": {
+    "renderer": "default",
+    "font_size_offset": -2
+  },
+  "inpainter": {
+    "inpainter": "lama_large",
+    "inpainting_size": 2048
+  }
+}
