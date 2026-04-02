@@ -4,6 +4,10 @@ Translate manga pages from Japanese (or any language) to English using AI — ju
 
 Supports DeepL, GPT-4o, Gemini, DeepSeek, Groq, and several offline models out of the box.
 
+> **Default:** Uses DeepL free tier (500k characters/month, no credit card needed) — great quality out of the box.
+>
+> **For the best translations:** Use GPT-4o (`-t chatgpt`) or Gemini (`-t gemini`) with an API key. These produce significantly more natural, context-aware English and handle nuance much better than standard MT.
+
 ---
 
 ## Examples
