@@ -8,8 +8,8 @@
     "detection_size": 2048
   },
   "render": {
-    "renderer": "default",
-    "font_size_offset": -2
+    "renderer": "manga2eng_pillow",
+    "font_size_offset": 0
   },
   "inpainter": {
     "inpainter": "lama_large",
