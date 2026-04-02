@@ -6,6 +6,16 @@ Supports DeepL, GPT-4o, Gemini, DeepSeek, Groq, and several offline models out o
 
 ---
 
+## Examples
+
+| | |
+|---|---|
+| ![Example 1](assets/example_1.png) | |
+| ![Example 2](assets/example_2.png) | |
+| ![Example 3](assets/example_3.png) | |
+
+---
+
 ## Features
 
 - Translates entire folders of manga pages in one command
@@ -152,8 +162,8 @@ Edit `settings.json` to change defaults:
     "detection_size": 2048
   },
   "render": {
-    "renderer": "default",
-    "font_size_offset": -2
+    "renderer": "manga2eng_pillow",
+    "font_size_offset": 0
   },
   "inpainter": {
     "inpainter": "lama_large",
